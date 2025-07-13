@@ -1,0 +1,47 @@
+/* Container */
+.Women_boys_news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Breadcrumb */
+.Women_boys_news-breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.Women_boys_news-breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.Women_boys_news-breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.Women_boys_news-breadcrumb-separator {
+    margin: 0 0.5rem;
+}
+
+/* Main Content */
+.Women_boys_news-main-content {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Left Section */
+.Women_boys_news-left-section {
+    flex: 1;
+    max-width: 25%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Right Section */
+.Women_boys_news-right-section {
+    flex: 3;
+    max-width: 75%; /* Adjust as needed */
+}

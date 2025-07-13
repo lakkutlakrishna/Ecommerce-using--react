@@ -1,0 +1,219 @@
+/* Container */
+.sub-rengae-manges-container {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #333; 
+    margin-top: -6%;
+    margin-right: 10%;
+}
+
+/* Title */
+.sub-rengae-manges-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* Controls */
+.sub-rengae-manges-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sub-rengae-manges-grid-controls,
+.sub-rengae-manges-sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub-rengae-manges-control-label {
+    font-weight: 600;
+}
+
+.sub-rengae-manges-grid-view-button {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sub-rengae-manges-grid-view-button:hover {
+    background-color: #f97316;
+    color: white;
+}
+
+.sub-rengae-manges-button-active {
+    background-color: #f97316;
+    color: white;
+}
+
+.sub-rengae-manges-select {
+    border: 1px solid #d1d5db;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.sub-rengae-manges-compare-button {
+    border: 1px solid #d1d5db;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sub-rengae-manges-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+}
+
+/* Product Grid */
+.sub-rengae-manges-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.sub-rengae-manges-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sub-rengae-manges-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sub-rengae-manges-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-rengae-manges-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Product Card */
+.sub-rengae-manges-product-card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    background-color: white;
+    position: relative;
+}
+
+.sub-rengae-manges-product-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-rengae-manges-image {
+    width: 100%;
+    height: auto;
+}
+
+.sub-rengae-manges-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sub-rengae-manges-product-card:hover .sub-rengae-manges-overlay {
+    opacity: 1;
+}
+
+.sub-rengae-manges-overlay-button {
+    background-color: #ea580c;
+    border-radius: 39px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sub-rengae-manges-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.sub-rengae-manges-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.sub-rengae-manges-star {
+    color: #fbbf24;
+}
+
+.sub-rengae-manges-rating-count {
+    color: #6b7280;
+}
+
+.sub-rengae-manges-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 8px;
+}
+
+.sub-rengae-manges-actions {
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sub-rengae-manges-product-card:hover .sub-rengae-manges-actions {
+    opacity: 1;
+}
+
+.sub-rengae-manges-action-button {
+    color: #f97316;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sub-rengae-manges-action-button:hover {
+    color: #ea580c;
+}
+
+/* Table View */
+.sub-rengae-manges-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.sub-rengae-manges-table th,
+.sub-rengae-manges-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    text-align: left;
+}
+
+.sub-rengae-manges-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+}
+
+.sub-rengae-manges-table-image {
+    width: 50px;
+    height: auto;
+}
+
+.sub-rengae-manges-table-actions {
+    display: flex;
+    gap: 8px;
+}

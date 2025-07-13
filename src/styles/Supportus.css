@@ -1,0 +1,94 @@
+/* General Styles */
+.support-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f3f4f6;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Breadcrumb */
+  .support-breadcrumb {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  
+  .support-breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+  }
+  
+  .support-breadcrumb-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Title Section */
+  .support-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 8px;
+  }
+  
+  .support-title-underline {
+    width: 64px;
+    height: 4px;
+    background-color: #f97316;
+    margin: 0 auto 16px;
+  }
+  
+  .support-description {
+    font-size: 1rem;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  /* Cards Section */
+  .support-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+  }
+  
+  .support-card {
+    display: flex;
+    align-items: center;
+    background-color: #f97316;
+    color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .support-card:hover {
+    background-color: #1f2937;
+  }
+  
+  .support-card-icon {
+    font-size: 2rem;
+    margin-right: 16px;
+  }
+  
+  .support-card-content {
+    flex: 1;
+  }
+  
+  .support-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .support-card-text {
+    font-size: 0.875rem;
+    color: #e5e7eb;
+  }
+  
+  .support-card-arrow {
+    font-size: 1.5rem;
+    margin-left: 16px;
+  }

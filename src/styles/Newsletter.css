@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Breadcrumb */
+.newsletter-breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.newsletter-breadcrumb-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.newsletter-breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.newsletter-breadcrumb-separator {
+    margin: 0 8px;
+    color: #666;
+}
+
+.newsletter-breadcrumb-current {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Title */
+.newsletter-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Main Content Layout */
+.newsletter-main {
+    display: flex;
+    gap: 20px; /* Space between main content and sidebar */
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    flex: 70%; /* Occupy 70% of the width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.newsletter-radio-group {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.newsletter-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.newsletter-radio-label input[type="radio"] {
+    margin: 0;
+}
+
+/* Buttons */
+.newsletter-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-back-button,
+.newsletter-continue-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.newsletter-back-button {
+    background-color: #f97316;
+    color: #fff;
+}
+
+.newsletter-back-button:hover {
+    background-color: #e56a15;
+}
+
+.newsletter-continue-button {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.newsletter-continue-button:hover {
+    background-color: #5a6268;
+}
+
+/* Sidebar */
+.newsletter-sidebar {
+    flex: 30%; /* Occupy 30% of the width */
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: -9%;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .newsletter-main {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+    }
+
+    .newsletter-section {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .newsletter-sidebar {
+        flex: 100%; /* Full width on smaller screens */
+    }
+}

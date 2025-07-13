@@ -1,0 +1,124 @@
+/* Container Styles */
+.lists-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6; /* Gray-100 */
+}
+
+/* Grid Layout */
+.lists-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Section Styles */
+.lists-section {
+  margin-bottom: 2rem;
+}
+
+.lists-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Content Box Styles */
+.lists-content-box {
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb; /* Gray-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Copy Button Styles */
+.lists-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #374151; /* Gray-700 */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.lists-copy-btn:hover {
+  background-color: #1d4ed8; /* Blue-700 */
+  color: white;
+}
+
+/* Content Title and Description */
+.lists-content-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.lists-content-description {
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray-500 */
+  margin-bottom: 1rem;
+}
+
+/* Definition Lists */
+.lists-definition-term {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.lists-definition-description {
+  margin-bottom: 1rem;
+  color: #6b7280; /* Gray-500 */
+}
+
+/* Horizontal Definition */
+.lists-horizontal-definition {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+}
+
+/* Unordered Lists */
+.lists-unordered-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #6b7280; /* Gray-500 */
+}
+
+.lists-unordered-list.nested {
+  margin-left: 1.5rem;
+}
+
+/* Ordered Lists */
+.lists-ordered-list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  color: #6b7280; /* Gray-500 */
+}
+
+.lists-ordered-list.nested {
+  margin-left: 1.5rem;
+}
+
+.lists-list-description {
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray-500 */
+  margin-top: 0.5rem;
+}
+
+/* Code Content Styles */
+.lists-code-content {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  margin-top: 1rem;
+}

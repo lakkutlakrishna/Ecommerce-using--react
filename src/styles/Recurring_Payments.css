@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.Recurring_Payment-container {
+    max-width: 1200px;
+    margin-top: -2%;
+    padding: 20px;
+}
+
+/* Breadcrumb */
+.Recurring_Payment-breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.Recurring_Payment-breadcrumb-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.Recurring_Payment-breadcrumb-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.Recurring_Payment-breadcrumb-separator {
+    margin: 0 8px;
+    color: #666;
+}
+
+/* Main Content and Sidebar Layout */
+.Recurring_Payment-content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between main content and sidebar */
+}
+
+/* Main Content (Order History Section) */
+.Recurring_Payment-main {
+    flex: 70%; /* Occupy 70% of the width */
+}
+
+.Recurring_Payment-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.Recurring_Payment-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Recurring_Payment-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.Recurring_Payment-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Recurring_Payment-continue-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Recurring_Payment-continue-button:hover {
+    background-color: #5a6268;
+}
+
+/* Sidebar */
+.Recurring_Payment-sidebar {
+    flex: 30%; /* Occupy 30% of the width */
+    /* background-color: #fff; */
+    margin-top: -3%;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.Recurring_Payment-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Recurring_Payment-sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Recurring_Payment-sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Recurring_Payment-sidebar-menu li {
+    margin-bottom: 8px;
+}
+
+.Recurring_Payment-sidebar-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.Recurring_Payment-sidebar-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Recurring_Payment-content-wrapper {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+    }
+
+    .Recurring_Payment-main {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .Recurring_Payment-sidebar {
+        flex: 100%; /* Full width on smaller screens */
+    }
+}

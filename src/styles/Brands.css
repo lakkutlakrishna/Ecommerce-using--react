@@ -1,0 +1,53 @@
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limit the width */
+    margin: 0 auto; /* Center the container */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    cursor: pointer;
+    height: 3rem; /* h-12 */
+    width: 6.25rem; /* w-25 */
+    margin-right: 2rem; /* space-x-8 */
+}
+
+.carousel img:hover {
+    background-color: #f0f0f0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* White arrow color */
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem; /* Larger clickable area */
+    border-radius: 50%; /* Circular shape */
+    font-size: 1rem; /* Arrow size */
+    z-index: 10; /* Ensure arrows are above the carousel */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.arrow-left {
+    left: 1rem; /* Move the left arrow inside the container */
+}
+
+.arrow-right {
+    right: 1rem; /* Move the right arrow inside the container */
+}

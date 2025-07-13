@@ -1,0 +1,151 @@
+/* Container */
+.information-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background-color: #ffffff; */
+  }
+  
+  /* Popup */
+  .information-popup {
+    /* background-color: #ffffff; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 480px;
+    width: 100%;
+  }
+  
+  /* Header Section */
+  .information-header {
+    position: relative;
+  }
+  
+  .information-image {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+  }
+  
+  .information-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .information-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    color: #ffffff;
+  }
+  
+  .information-close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 24px;
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .information-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .information-description {
+    margin-top: 8px;
+  }
+  
+  .information-highlight {
+    color: #f97316;
+    font-weight: bold;
+  }
+  
+  /* Input Group */
+  .information-input-group {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 384px;
+  }
+  
+  .information-input-field {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+  }
+  
+  .information-submit-button {
+    padding: 8px;
+    background-color: #f97316;
+    /* color: #ffffff; */
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+  }
+  
+  /* Checkbox Group */
+  .information-checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .information-checkbox {
+    margin-right: 8px;
+  }
+  
+  .information-checkbox-label {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  /* Social Media Section */
+  .information-social-media-section {
+    background-color: #f97316;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .information-social-media-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .information-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  
+  .information-social-icon {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 8px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .information-social-icon:hover {
+    background-color: #f97316;
+  }

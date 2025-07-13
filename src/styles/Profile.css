@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Container Styling */
+  .profile-section {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styling */
+  .profile-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Profile Details Container */
+  .profile-details {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Profile Picture Section */
+  .profile-picture {
+    text-align: center;
+  }
+  
+  .profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+  }
+  
+  .profile-picture button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .profile-picture button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .profile-picture button:focus {
+    outline: 2px solid #004085;
+    outline-offset: 2px;
+  }
+  
+  /* Personal Info Section */
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .personal-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .personal-info strong {
+    color: #333;
+  }
+  
+  .personal-info button {
+    align-self: flex-start;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .personal-info button:hover {
+    background-color: #1e7e34;
+    transform: scale(1.02);
+  }
+  
+  .personal-info button:focus {
+    outline: 2px solid #155724;
+    outline-offset: 2px;
+  }
+  
+  /* Address Management Section */
+  .address-management {
+    margin-top: 2rem;
+  }
+  
+  .address-management h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .address-management ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .address-management li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .address-management button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .address-management button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .address-management button:focus {
+    outline: 2px solid #004085;
+    outline-offset: 2px;
+  }

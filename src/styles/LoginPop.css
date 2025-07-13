@@ -1,0 +1,200 @@
+/* General Styles */
+.logpop-container {
+    width: 100%;
+    max-width: 960px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logpop-container.hidden {
+    display: none; /* Hide the modal when closed */
+}
+
+.logpop-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+}
+
+.logpop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #f97316 50%, #000 50%);
+    height: 48px;
+    padding: 0 16px;
+    position: relative;
+}
+
+.logpop-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: #000;
+    clip-path: ellipse(50% 50% at 0% 50%);
+}
+
+.logpop-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.logpop-header-right button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logpop-content {
+    display: flex;
+    padding: 20px;
+}
+
+.logpop-left-section {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.logpop-right-section {
+    width: 50%;
+    padding-left: 20px;
+    border-left: 1px solid #e5e7eb;
+}
+
+.logpop-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.logpop-input-icon {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+}
+
+.logpop-input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 0 4px 4px 0;
+}
+
+.logpop-social-login p {
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+.logpop-social-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.logpop-social-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.logpop-social-btn:hover {
+    filter: brightness(1.2);
+}
+
+.logpop-google {
+    background-color: #dc2626;
+}
+
+.logpop-facebook {
+    background-color: #2563eb;
+}
+
+.logpop-twitter {
+    background-color: #1d9bf0;
+}
+
+.logpop-linkedin {
+    background-color: #0a66c2;
+}
+
+.logpop-forgot-password {
+    margin-bottom: 16px;
+}
+
+.logpop-forgot-password a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.logpop-login-btn {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logpop-login-btn:hover {
+    background-color: #f97316;
+}
+
+.logpop-right-section h2 {
+    color: #4b5563;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.logpop-right-section p {
+    color: #4b5563;
+    margin-bottom: 16px;
+}
+
+.logpop-right-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.logpop-right-section ul li {
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+.logpop-right-section ul li i {
+    color: #f97316;
+    margin-right: 8px;
+}
+
+.logpop-create-account-btn {
+    background-color: #f97316;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}

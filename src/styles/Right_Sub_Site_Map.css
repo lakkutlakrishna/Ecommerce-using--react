@@ -1,0 +1,52 @@
+/* Container for the entire component */
+.right-sub-site-map-container {
+    margin-top: -20%;
+    padding: 1rem; /* Add padding around the component */
+    background-color: white; /* Set background color */
+    color: #1a1a1a; /* Set text color */
+  }
+  
+  /* Main list styling */
+  .right-sub-site-map-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Main list items */
+  .right-sub-site-map-item {
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .right-sub-site-map-item:hover {
+    text-decoration: underline;
+    color: orange; /* Change text color on hover */
+  }
+  
+  /* Sub-list styling */
+  .right-sub-site-map-sub-list {
+    list-style: none; /* Remove default list styling */
+    padding-left: 1rem; /* Add left padding for indentation */
+    margin: 0;
+  }
+  
+  /* Sub-list items */
+  .right-sub-site-map-sub-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .right-sub-site-map-sub-item:hover {
+    /* text-decoration: underline; */
+    color: orange; /* Change text color on hover */
+  }
+  
+  /* Icon styling */
+  .right-sub-site-map-sub-item .fa-chevron-right {
+    font-size: 0.875rem; /* Set icon size */
+    margin-right: 0.5rem; /* Add spacing between icon and text */
+  }

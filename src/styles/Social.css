@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6; /* Light gray background */
+  }
+  
+  .social-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  /* Left Side Icons */
+  .left-icons {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    margin-right: 99%;
+    /* left: 20px; Distance from the left edge */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    display: flex;
+    flex-direction: column; /* Arrange items in a single column */
+    gap: 0; /* Remove space between icons */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .left-icons .icon {
+    width: 48px; /* Reduced size */
+    height: 48px; /* Reduced size */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border-radius: 0px; /* Rounded corners */
+    color: white;
+    font-size: 18px; /* Reduced icon size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0; /* Ensure no extra margin */
+    margin-top: 1px;
+    padding: 0; /* Ensure no extra padding */
+  }
+  
+  .left-icons .facebook {
+    background-color: #1877f2; /* Facebook blue */
+  }
+  
+  .left-icons .twitter {
+    background-color: #1da1f2; /* Twitter blue */
+  }
+  
+  .left-icons .youtube {
+    background-color: #ff0000; /* YouTube red */
+  }
+  
+  /* Right Side Icons */
+  /* Right Side Icons */
+.right-icons {
+    position: fixed;
+    cursor: pointer;
+    top: 54%; /* Center vertically */
+    right: 0px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    display: flex;
+    margin-left: 99%;
+    flex-direction: column; /* Arrange items in a single column */
+    gap: 0; /* Remove space between icons */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .right-icons .icon {
+    position: relative; /* Required for positioning the tooltip */
+    width: 48px; /* Reduced size */
+    height: 48px; /* Reduced size */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border-radius: 0px; /* Rounded corners */
+    background-color: #f97316; /* Orange background */
+    color: white;
+    font-size: 18px; /* Reduced icon size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0; /* Ensure no extra margin */
+    margin-top: 1px;
+    padding: 0; /* Ensure no extra padding */
+  }
+  
+  /* Tooltip for Icon Name */
+  .right-icons .icon::before {
+    content: attr(data-tooltip); /* Use the data-tooltip attribute for the name */
+    position: absolute;
+    top: 50%;
+    right: 60px; /* Position to the left of the icon */
+    transform: translateY(-50%);
+    background-color: #f97316; /* Same background color as the icon */
+    color: white; /* Text color */
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap; /* Prevent text wrapping */
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    pointer-events: none; /* Prevent tooltip from blocking clicks */
+  }
+  
+  /* Show Tooltip on Hover */
+  .right-icons .icon:hover::before {
+    opacity: 1; /* Make tooltip visible */
+    visibility: visible; /* Make tooltip visible */
+  }
+  /* Hover Box Styles */
+.left-icons .icon {
+  position: relative; /* Required for positioning the hover box */
+}
+
+.left-icons .icon .hover-box {
+  position: absolute;
+  top: 50%; /* Position it near the icon */
+  left: 60px; /* Distance from the icon */
+  transform: translateY(-50%);
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color */
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Hidden by default */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+  z-index: 10; /* Ensure it appears above other elements */
+  white-space: nowrap; /* Prevent text wrapping */
+  min-width: 150px; /* Minimum width for the box */
+  text-align: center; /* Center align content */
+}
+
+.left-icons .icon .hover-box p {
+  margin: 0 0 8px; /* Space between text and link */
+  font-size: 14px;
+}
+
+.left-icons .icon .hover-box a {
+  display: inline-block;
+  color: #f97316; /* Orange link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left-icons .icon .hover-box a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Show Hover Box on Icon Hover */
+.left-icons .icon:hover .hover-box {
+  opacity: 1; /* Make the box visible */
+  visibility: visible; /* Make the box visible */
+}
+
+
+

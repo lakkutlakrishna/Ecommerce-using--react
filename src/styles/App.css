@@ -1,0 +1,136 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.main-content {
+  padding: 2rem 1rem;
+}
+
+.hero-section {
+  margin-bottom: 3rem;
+}
+
+.hero-container {
+  position: relative;
+  height: 500px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  background-color: white;
+  color: black;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 400px; /* Adjust height for tablets and smaller screens */
+  }
+
+  .hero-title {
+    font-size: 2.5rem; /* Slightly smaller title on tablets */
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem; /* Adjust subtitle font size */
+  }
+
+  .hero-button {
+    padding: 0.5rem 1.5rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: 300px; /* Further reduce the hero container height for mobile */
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Smaller title for mobile */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem; /* Smaller subtitle for mobile */
+    margin-bottom: 1.5rem; /* Less bottom margin */
+  }
+
+  .hero-button {
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+    font-size: 0.875rem; /* Adjust button font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem; /* Even smaller title for very small screens */
+  }
+
+  .hero-subtitle {
+    font-size: 0.875rem; /* Even smaller subtitle */
+  }
+
+  .hero-button {
+    padding: 0.5rem 0.75rem; /* Adjust padding even further for very small screens */
+    font-size: 0.75rem; /* Smaller font size for the button */
+  }
+}

@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.Product_Return-container {
+    max-width: 1200px;
+    margin-top: -2%;
+    padding: 20px;
+}
+
+/* Breadcrumb */
+.Product_Return-breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.Product_Return-breadcrumb-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.Product_Return-breadcrumb-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.Product_Return-breadcrumb-separator {
+    margin: 0 8px;
+    color: #666;
+}
+
+/* Main Content and Sidebar Layout */
+.Product_Return-content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between main content and sidebar */
+}
+
+/* Main Content (Order History Section) */
+.Product_Return-main {
+    flex: 70%; /* Occupy 70% of the width */
+}
+
+.Product_Return-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.Product_Return-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Product_Return-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.Product_Return-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Product_Return-continue-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Product_Return-continue-button:hover {
+    background-color: #5a6268;
+}
+
+/* Sidebar */
+.Product_Return-sidebar {
+    flex: 30%; /* Occupy 30% of the width */
+    /* background-color: #fff; */
+    margin-top: -3%;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.Product_Return-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Product_Return-sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Product_Return-sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Product_Return-sidebar-menu li {
+    margin-bottom: 8px;
+}
+
+.Product_Return-sidebar-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.Product_Return-sidebar-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Product_Return-content-wrapper {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+    }
+
+    .Product_Return-main {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .Product_Return-sidebar {
+        flex: 100%; /* Full width on smaller screens */
+    }
+}

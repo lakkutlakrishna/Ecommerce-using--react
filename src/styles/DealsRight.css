@@ -1,0 +1,108 @@
+/* Scoped styles for DealsRight component */
+.deals-right-container {
+  max-width: 360px;
+  margin-right: 90%;
+  padding: 1rem;
+}
+
+.deals-right-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.deals-right-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9fafb;
+}
+
+.deals-right-flex {
+  display: flex;
+  align-items: center;
+}
+
+.deals-right-icon {
+  color: #f97316; /* Tailwind orange-500 */
+}
+
+.deals-right-title {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.deals-right-chevron {
+  font-size: 1rem;
+  color: #6b7280; /* Tailwind gray-500 */
+  cursor: pointer;
+}
+
+.deals-right-chevron-right {
+  margin-left: 0.5rem;
+}
+
+.deals-right-chevron:hover {
+  color: #374151; /* Tailwind gray-700 */
+}
+
+.deals-right-content {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.deals-right-slide-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.deals-right-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.deals-right-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.deals-right-image {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.deals-right-details {
+  margin-left: 0.75rem;
+}
+
+.deals-right-name {
+  font-size: 0.875rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.deals-right-name:hover {
+  color: red;
+}
+
+.deals-right-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f97316; /* Tailwind orange-500 */
+}
+
+.deals-right-old-price {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  color: #6b7280; /* Tailwind gray-500 */
+  text-decoration: line-through;
+}

@@ -1,0 +1,72 @@
+/* General Styles */
+.account-container {
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.breadcrumb-icon {
+    margin-right: 8px;
+}
+
+.account-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between main content and sidebar */
+    margin-left: 5%;
+}
+
+@media (min-width: 1024px) {
+    .account-content {
+        flex-direction: row;
+    }
+}
+
+.account-main {
+    flex: 3; /* Take up 3 parts of the available space */
+    margin-left: 1%; /* Add extra margin to push it further to the right */
+    max-width: 1000px;
+}
+
+.acc {
+    flex: 1; /* Take up 1 part of the available space */
+    margin-top: -3%;
+    margin-right: 4%;
+}
+
+.account-section {
+    margin-bottom: 24px;
+}
+
+.account-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.account-section ul {
+    list-style: none;
+    padding-left: 15px;
+    margin-right: 30px;
+    margin-right: -20%;
+}
+
+.account-section ul li {
+    color: #4b5563;
+    margin-bottom: 8px;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+.account-section ul li:hover {
+    color: #ffa500;
+}

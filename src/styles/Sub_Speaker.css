@@ -1,0 +1,260 @@
+/* Container */
+.sub-speaker-container {
+    background-color: #f3f4f6;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  .sub-speaker-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Controls */
+  .sub-speaker-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .sub-speaker-grid-controls,
+  .sub-speaker-sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .sub-speaker-label {
+    font-weight: 600;
+  }
+  
+  .sub-speaker-grid-button,
+  .sub-speaker-select,
+  .sub-speaker-compare-button {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .sub-speaker-grid-button:hover,
+  .sub-speaker-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .sub-speaker-button-active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  /* Grid View */
+  .sub-speaker-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .sub-speaker-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .sub-speaker-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .sub-speaker-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .sub-speaker-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Card */
+  .sub-speaker-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .sub-speaker-image-container {
+    position: relative;
+  }
+  
+  .sub-speaker-main-image {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+  }
+  
+  .sub-speaker-discount {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: #f97316;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+  }
+  
+  .sub-speaker-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .sub-speaker-card:hover .sub-speaker-overlay {
+    opacity: 1;
+  }
+  
+  .sub-speaker-overlay-icon {
+    background-color: #f97316;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+  }
+  
+  .sub-speaker-thumbnails {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .sub-speaker-thumbnail {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d1d5db;
+    cursor: pointer;
+  }
+  
+  .sub-speaker-actions {
+    position: absolute;
+    bottom: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .sub-speaker-action-button {
+    background-color: #f97316;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .sub-speaker-action-button:hover {
+    background-color: #ea580c;
+  }
+  
+  /* Color Options */
+  .sub-speaker-color-options {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sub-speaker-color-option {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  
+  /* Product Name */
+  .sub-speaker-product-name {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Rating */
+  .sub-speaker-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sub-speaker-rating i {
+    color: #d1d5db;
+  }
+  
+  .sub-speaker-rating-count {
+    color: #6b7280;
+  }
+  
+  /* Price */
+  .sub-speaker-price {
+    text-align: center;
+  }
+  
+  .sub-speaker-discounted-price {
+    color: #f97316;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .sub-speaker-original-price {
+    color: #6b7280;
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+  }
+  
+  /* Grid Info */
+  .sub-speaker-grid-info {
+    text-align: right;
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+  
+  /* Table View */
+  .sub-speaker-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .sub-speaker-table th,
+  .sub-speaker-table td {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .sub-speaker-table th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+  }
+  
+  .sub-speaker-table-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .sub-speaker-table-actions {
+    display: flex;
+    gap: 0.5rem;
+  }

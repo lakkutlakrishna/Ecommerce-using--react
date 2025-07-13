@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container Styling */
+.users-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+/* Top Bar Styling */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  background: linear-gradient(135deg, #f0f0f0, #a8dadc, #f5e8c7, #c012b7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.top-bar .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-bar .logo {
+  color: #007bff;
+}
+
+.theme-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-button:hover {
+  background-color: #0056b3;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Sidebar Navigation Styling */
+.sidebar {
+  position: fixed;
+  top: 60px; /* Below the top bar */
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar .tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #555;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .tab:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.sidebar .tab.active {
+  background-color: #007bff;
+  color: #fff;
+}
+.to{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Main Content Section Styling */
+.user-content {
+  margin-left: 220px; /* To account for the sidebar */
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0f0f0, #a8dadc, #f5e8c7, #f2b231);
+  flex-grow: 1;
+}
+
+.user-content h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.user-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.user-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-info li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.settings-options label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.favorite-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.favorite-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.favorite-item span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* User Dashboard Component Styling */
+.UserDashboard {
+  position: fixed;
+  top: 60px; /* Below the top bar */
+  left: 220px; /* To the right of the sidebar */
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  height: calc(100vh - 60px); /* Full height minus the top bar */
+  overflow-y: auto;
+}
+

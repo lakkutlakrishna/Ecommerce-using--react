@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    background-color: #f3f4f6;
+}
+
+.Info-footer {
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.Info-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.Info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+}
+
+.Info-heading {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.Info-list li {
+    margin-bottom: 0.5rem;
+}
+
+.Info-link {
+    color: #4b5563;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Ensure the transform works correctly */
+}
+
+.Info-link:hover {
+    transform: translateX(10px); /* Move the item 10px to the right on hover */
+    color: #f97316;
+}
+.Info-flex-tcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Info-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Info-border-ttop {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.Info-border-top {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.Info-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Info-links .Info-link {
+    color: #4b5563;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Ensure the transform works correctly */
+}
+
+.Info-links .Info-link:hover {
+    transform: translateX(10px); /* Move the item 10px to the right on hover */
+    color: #1f2937;
+}
+
+.Info-newsletter {
+    display: flex;
+    align-items: center;
+}
+
+.Info-input {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.Info-button {
+    background-color: #f97316;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+}
+
+.Info-social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.Info-social-link {
+    color: #4b5563;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Ensure the transform works correctly */
+}
+
+.Info-social-link:hover {
+    
+    color: #f97316;
+}
+
+/* Font Awesome Icons */
+.Info-icon {
+    margin-right: 0.5rem;
+}

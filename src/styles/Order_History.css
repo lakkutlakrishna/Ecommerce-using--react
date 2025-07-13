@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.order-history-container {
+    max-width: 1200px;
+    margin-top: -2%;
+    padding: 20px;
+}
+
+/* Breadcrumb */
+.order-history-breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.order-history-breadcrumb-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.order-history-breadcrumb-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.order-history-breadcrumb-separator {
+    margin: 0 8px;
+    color: #666;
+}
+
+/* Main Content and Sidebar Layout */
+.order-history-content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between main content and sidebar */
+}
+
+/* Main Content (Order History Section) */
+.order-history-main {
+    flex: 70%; /* Occupy 70% of the width */
+}
+
+.order-history-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.order-history-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.order-history-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.order-history-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-history-continue-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-history-continue-button:hover {
+    background-color: #5a6268;
+}
+
+/* Sidebar */
+.order-history-sidebar {
+    flex: 30%; /* Occupy 30% of the width */
+    /* background-color: #fff; */
+    margin-top: -3%;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.order-history-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-history-sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.order-history-sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-history-sidebar-menu li {
+    margin-bottom: 8px;
+}
+
+.order-history-sidebar-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.order-history-sidebar-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .order-history-content-wrapper {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+    }
+
+    .order-history-main {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .order-history-sidebar {
+        flex: 100%; /* Full width on smaller screens */
+    }
+}

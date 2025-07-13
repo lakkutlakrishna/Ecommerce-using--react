@@ -1,0 +1,58 @@
+/* Breadcrumb Styling */
+.Fashion_Electronics-breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  
+  .Fashion_Electronics-breadcrumb-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .Fashion_Electronics-breadcrumb-link:hover {
+    text-decoration: underline;
+  }
+  
+  .Fashion_Electronics-breadcrumb-separator {
+    margin: 0 5px;
+    color: #6c757d;
+  }
+  
+  /* Two-column Layout */
+  .Fashion_Electronics-container {
+    display: flex;
+    gap: 20px; /* Space between the two columns */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Left Section */
+  .Fashion_Electronics-left-section {
+    flex: 0 0 250px; /* Fixed width for the left section */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between components inside the left section */
+  }
+  
+  /* Right Section */
+  .Fashion_Electronics-right-section {
+    flex: 1; /* Takes up the remaining space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between components inside the right section */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Fashion_Electronics-container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  
+    .Fashion_Electronics-left-section {
+      flex: 1; /* Allow the left section to take full width on smaller screens */
+    }
+  }

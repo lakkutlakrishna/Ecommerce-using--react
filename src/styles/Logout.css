@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.logout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Breadcrumb */
+.logout-breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.logout-breadcrumb-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.logout-breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.logout-breadcrumb-separator {
+    margin: 0 8px;
+    color: #666;
+}
+
+/* Title */
+.logout-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Main Content and Sidebar Layout */
+.logout-content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between main content and sidebar */
+}
+
+/* Main Content (Table Section) */
+.logout-table-section {
+    flex: 70%; /* Occupy 70% of the width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logout-table-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.logout-continue-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-continue-button:hover {
+    background-color: #5a6268;
+}
+
+/* Sidebar */
+.logout-sidebar {
+    flex: 30%; /* Occupy 30% of the width */
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: -7%;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logout-content-wrapper {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+    }
+
+    .logout-table-section {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .logout-sidebar {
+        flex: 100%; /* Full width on smaller screens */
+    }
+}

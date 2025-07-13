@@ -1,0 +1,111 @@
+/* Container */
+.shopby-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 256px;
+}
+.shopby-section-content {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+/* Header */
+.shopby-header {
+  margin-bottom: 1rem;
+}
+
+.shopby-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Section */
+.shopby-section {
+  margin-bottom: 1rem;
+}
+
+.shopby-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.shopby-section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.shopby-section-header i {
+  transition: transform 0.3s ease;
+}
+
+.shopby-section-content {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* Checkbox Items */
+.shopby-checkbox-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.shopby-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.shopby-checkbox {
+  margin-right: 0.5rem;
+}
+
+.shopby-checkbox-text {
+  font-size: 0.875rem;
+}
+
+.shopby-count {
+  background-color: #e5e7eb;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+/* Price Section */
+.shopby-price-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.shopby-price-input {
+  width: 48%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.shopby-price-slider {
+  width: 100%;
+}
+
+/* Reset Button */
+.shopby-reset-button {
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.shopby-reset-button:hover {
+  background-color: #374151;
+}

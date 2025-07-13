@@ -1,0 +1,14 @@
+.Sitemap-container{
+    margin-left: 5%;
+}
+.Sitemap-content{
+    display: flex;
+    justify-content: space-between;
+}
+.sitemap-right-side{
+    margin-right: 10%;
+}
+.Sitemap-header{
+    font-weight: bold;
+    margin-bottom: 10px;
+}

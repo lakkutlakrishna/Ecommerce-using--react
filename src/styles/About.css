@@ -1,0 +1,103 @@
+/* General Styles */
+.about-container {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* Header Image */
+  .header-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    padding: 32px 0;
+  }
+  
+  .welcome-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .welcome-text {
+    margin-top: 16px;
+    color: #666;
+  }
+  
+  /* Meet Our Team Section */
+  .team-section {
+    text-align: center;
+    padding: 32px 0;
+  }
+  
+  .team-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .team-text {
+    margin-top: 16px;
+    color: #666;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .team-member {
+    width: 100%;
+    max-width: 200px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .member-name {
+    margin-top: 16px;
+    font-weight: bold;
+  }
+  
+  .member-role {
+    color: #666;
+  }
+  
+  /* Information Section */
+  .info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px 0;
+  }
+  
+  .info-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  .info-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-title {
+    margin-top: 16px;
+    font-weight: bold;
+  }
+  
+  .info-text {
+    color: #666;
+  }

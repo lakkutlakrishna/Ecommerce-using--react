@@ -1,0 +1,55 @@
+/* Header Styling */
+.typography-header {
+  margin-left: 6%; /* Add left margin to the header */
+}
+
+.typography-header h7 {
+  font-size: 14px;
+  color: #666;
+}
+
+.typography-header h7 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.typography-header h7 a:hover {
+  text-decoration: underline;
+}
+
+.typography-header h1 {
+  margin-top: 10px; /* Add top margin to the h1 */
+  font-size: 24px;
+}
+
+/* Horizontal Line */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 0;
+}
+
+/* Container for the entire component */
+.typography-content {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  gap: 20px; /* Space between components */
+  padding: 20px;
+  margin-left: 6%; /* Add left margin to the content */
+}
+
+/* Remove unnecessary left and right side styling */
+.typography-left-side,
+.typography-right-side {
+  display: none; /* Hide these as they are not needed */
+}
+
+/* Iframe Styling (if you still need it) */
+.typography-right-side iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}

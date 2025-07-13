@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+}
+
+/* Wrapper for the two sections */
+.today-deals-wrapper {
+  display: flex;
+  /* margin-left: 17px; */
+  gap: 20px; /* Space between left and right components */
+  width: 100%; /* Full width of the screen */
+  padding: 20px; /* Add some padding around the wrapper */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Left Section - Today Deals */
+.today-deals-container {
+  flex: 0 0 70%; /* Occupy 70% of the screen width */
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px; /* Slightly increased for a smoother look */
+  border: 2px solid rgba(0, 0, 0, 0.2); /* Light black border */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a premium feel */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Right Section - Best Sellers */
+.deals-right-container {
+  flex: 0 0 30%; /* Occupy 30% of the screen width */
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Lighter border for the right section */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); /* Softer shadow for the right section */
+}
+
+/* Today Deals Header */
+.today-deals-header {
+  display: flex;
+  margin-top: 7%;
+  margin-left: 2%;
+  margin-bottom: 1rem;
+}
+
+.today-deals-badge {
+  background-color: #f97316; /* Tailwind orange-500 */
+  color: #ffffff;
+  padding: 0.05rem 2rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+/* Today Deals Content */
+.today-deals-content {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.today-deals-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.today-deals-main-image {
+  width: 192px;
+  height: 192px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.today-deals-main-image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.today-deals-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.today-deals-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.today-deals-discount-badge {
+  background-color: #f97316; /* Tailwind orange-500 */
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.today-deals-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.today-deals-title:hover {
+  color: red;
+}
+
+.today-deals-rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.today-deals-description {
+  color: #6b7280; /* Tailwind gray-500 */
+  font-size: 0.875rem;
+}
+
+.today-deals-price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.today-deals-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f97316; /* Tailwind orange-500 */
+}
+
+.today-deals-old-price {
+  font-size: 1rem;
+  color: #9ca3af; /* Tailwind gray-400 */
+  text-decoration: line-through;
+}
+
+.today-deals-timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.today-deals-time-unit {
+  text-align: center;
+}
+
+.today-deals-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.today-deals-label {
+  color: #6b7280; /* Tailwind gray-500 */
+  font-size: 0.875rem;
+}
+
+.today-deals-thumbnails {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  scroll-behavior: smooth;
+  /* Hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.today-deals-thumbnails::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.today-deals-thumbnail {
+  flex-shrink: 0;
+  width: 8rem;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  cursor: grab;
+  transition: border-color 0.3s ease;
+  background-color: #ffffff;
+}
+
+.today-deals-thumbnail:hover {
+  cursor: grabbing;
+}
+
+.today-deals-thumbnail.active {
+  border-color: #10b981; /* Tailwind green-500 */
+}
+
+.today-deals-thumbnail-image-container {
+  position: relative;
+}
+
+.today-deals-thumbnail-image {
+  width: 100%;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.today-deals-discount-badge {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  background-color: #f97316; /* Tailwind orange-500 */
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.today-deals-thumbnail-title {
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.today-deals-thumbnail-title:hover {
+  color: red;
+}
+
+/* Best Sellers Section */
+.deals-right-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9fafb;
+}
+
+.deals-right-flex {
+  display: flex;
+  align-items: center;
+}
+
+.deals-right-icon {
+  color: #f97316; /* Tailwind orange-500 */
+}
+
+.deals-right-title {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.deals-right-chevron {
+  font-size: 1rem;
+  color: #6b7280; /* Tailwind gray-500 */
+  cursor: pointer;
+}
+
+.deals-right-chevron-right {
+  margin-left: 0.5rem;
+}
+
+.deals-right-chevron:hover {
+  color: #374151; /* Tailwind gray-700 */
+}
+
+.deals-right-content {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.deals-right-slide-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.deals-right-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.deals-right-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.deals-right-image {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.deals-right-details {
+  margin-left: 0.75rem;
+}
+
+.deals-right-name {
+  font-size: 0.875rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.deals-right-name:hover {
+  color: red;
+}
+
+.deals-right-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f97316; /* Tailwind orange-500 */
+}
+
+.deals-right-old-price {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  color: #6b7280; /* Tailwind gray-500 */
+  text-decoration: line-through;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .today-deals-wrapper {
+    flex-direction: column;
+  }
+  .today-deals-container,
+  .deals-right-container {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
+}

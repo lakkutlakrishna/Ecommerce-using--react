@@ -1,0 +1,40 @@
+/* Sidebar Styles */
+.account-sidebar {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20%;
+}
+
+.account-sidebar h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1f2937;
+}
+
+.account-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.account-sidebar ul li {
+    color: #4b5563;
+    margin-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.account-sidebar ul li:hover {
+    color: #ffa500;
+}
+
+.sidebar-icon {
+    font-size: 12px;
+    margin-right: 8px;
+    color: #4b5563;
+}

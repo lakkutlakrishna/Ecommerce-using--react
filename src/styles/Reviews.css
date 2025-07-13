@@ -1,0 +1,106 @@
+/* General Styles */
+.reviews {
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 22%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .reviews h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .reviews h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .reviews-list {
+    margin-bottom: 20px;
+  }
+  
+  /* Review Card */
+  .review-card {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .review-card p strong {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Write a Review Button */
+  .reviews button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .reviews button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    background-color: #0056b3;
+  }
+  
+  /* Empty Reviews Message */
+  .reviews p {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .reviews {
+      padding: 15px;
+    }
+  
+    .review-card {
+      padding: 10px;
+    }
+  
+    .review-card p {
+      font-size: 14px;
+    }
+  
+    .reviews button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }

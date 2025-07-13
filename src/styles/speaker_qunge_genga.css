@@ -1,0 +1,47 @@
+/* Container */
+.speaker_qunge_genga-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Breadcrumb */
+.speaker_qunge_genga-breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.speaker_qunge_genga-breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.speaker_qunge_genga-breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.speaker_qunge_genga-breadcrumb-separator {
+    margin: 0 0.5rem;
+}
+
+/* Main Content */
+.speaker_qunge_genga-main-content {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Left Section */
+.speaker_qunge_genga-left-section {
+    flex: 1;
+    max-width: 25%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Right Section */
+.speaker_qunge_genga-right-section {
+    flex: 3;
+    max-width: 75%; /* Adjust as needed */
+}

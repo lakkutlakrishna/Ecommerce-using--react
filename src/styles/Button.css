@@ -1,0 +1,121 @@
+/* Container Styles */
+.button-container {
+    max-width: 56rem;
+    margin-left: 2%;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styles */
+  .button-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button Group Styles */
+  .button-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button Base Styles */
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  
+  /* Default Button */
+  .btn-default {
+    background-color: #1f2937; /* Gray-800 */
+  }
+  
+  .btn-default:hover {
+    background-color: #111827; /* Gray-900 */
+  }
+  
+  /* Primary Button */
+  .btn-primary {
+    background-color: #2563eb; /* Blue-600 */
+  }
+  
+  .btn-primary:hover {
+    background-color: #1d4ed8; /* Blue-700 */
+  }
+  
+  /* Warning Button */
+  .btn-warning {
+    background-color: #eab308; /* Yellow-500 */
+  }
+  
+  .btn-warning:hover {
+    background-color: #ca8a04; /* Yellow-600 */
+  }
+  
+  /* Danger Button */
+  .btn-danger {
+    background-color: #dc2626; /* Red-600 */
+  }
+  
+  .btn-danger:hover {
+    background-color: #b91c1c; /* Red-700 */
+  }
+  
+  /* Info Button */
+  .btn-info {
+    background-color: #0d9488; /* Teal-600 */
+  }
+  
+  .btn-info:hover {
+    background-color: #0f766e; /* Teal-700 */
+  }
+  
+  /* Success Button */
+  .btn-success {
+    background-color: #16a34a; /* Green-600 */
+  }
+  
+  .btn-success:hover {
+    background-color: #15803d; /* Green-700 */
+  }
+  
+  /* Code Container Styles */
+  .code-container {
+    position: relative;
+    background-color: #f3f4f6; /* Gray-100 */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Copy Button Styles */
+  .copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: #3b82f6; /* Blue-500 */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .copy-button:hover {
+    background-color: #2563eb; /* Blue-600 */
+  }
+  
+  /* Code Content Styles */
+  .code-content {
+    font-size: 0.875rem;
+    white-space: pre-wrap;
+    margin: 0;
+  }

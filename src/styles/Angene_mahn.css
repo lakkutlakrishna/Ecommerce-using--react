@@ -1,0 +1,48 @@
+/* Breadcrumb Styling */
+.Angene_mahn-breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .Angene_mahn-breadcrumb-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .Angene_mahn-breadcrumb-separator {
+    margin: 0 5px;
+    color: #6c757d;
+  }
+  
+  /* Two-column Layout */
+  .Angene_mahn-container {
+    display: flex;
+    gap: 0px; /* Space between the two columns */
+  }
+  
+  /* Left Section */
+  .Angene_mahn-left-section {
+    flex: 1; /* Takes up 1 part of the available space */
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    gap: 20px; /* Space between components inside the left section */
+  }
+  
+  /* Right Section */
+  .Angene_mahn-right-section {
+    flex: 1; /* Takes up 1 part of the available space */
+    display: flex;
+    flex-direction: column;
+    margin-right: 24%;
+    gap: 20px; /* Space between components inside the right section */
+  }
+  
+  /* Responsive Design (Optional) */
+  @media (max-width: 768px) {
+    .Angene_mahn-container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  }

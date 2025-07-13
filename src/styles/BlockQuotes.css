@@ -1,0 +1,139 @@
+/* General Layout */
+.blockquotes-container {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    padding: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .blockquotes-section,
+  .tags-section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Titles */
+  .blockquotes-title,
+  .tags-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Descriptions */
+  .blockquotes-description {
+    color: #4b5563; /* Tailwind's gray-700 */
+    margin-bottom: 1rem;
+  }
+  
+  /* Cards */
+  .blockquotes-card,
+  .tags-card {
+    position: relative;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Copy Button */
+  .blockquotes-copy-button,
+  .tags-copy-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background-color: #3b82f6; /* Tailwind's blue-500 */
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .blockquotes-copy-button:hover,
+  .tags-copy-button:hover {
+    background-color: #2563eb; /* Tailwind's blue-600 */
+  }
+  
+  /* Blockquotes */
+  .blockquotes-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .blockquotes-blockquote {
+    border-left: 4px solid #d1d5db; /* Tailwind's gray-300 */
+    padding-left: 1rem;
+    color: #374151; /* Tailwind's gray-700 */
+  }
+  
+  .blockquotes-blockquote-reverse {
+    text-align: right;
+  }
+  
+  .blockquotes-text {
+    margin: 0;
+  }
+  
+  .blockquotes-footer {
+    color: #6b7280; /* Tailwind's gray-500 */
+    font-size: 0.875rem;
+  }
+  
+  /* Code Blocks */
+  .blockquotes-code,
+  .tags-code {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    color: #374151; /* Tailwind's gray-700 */
+  }
+  
+  /* Tags */
+  .tags-content {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tags-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  
+  .tags-tag-default {
+    background-color: #e5e7eb; /* Tailwind's gray-200 */
+    color: #374151; /* Tailwind's gray-700 */
+  }
+  
+  .tags-tag-primary {
+    background-color: #3b82f6; /* Tailwind's blue-500 */
+    color: white;
+  }
+  
+  .tags-tag-success {
+    background-color: #22c55e; /* Tailwind's green-500 */
+    color: white;
+  }
+  
+  .tags-tag-info {
+    background-color: #facc15; /* Tailwind's yellow-500 */
+    color: white;
+  }
+  
+  .tags-tag-warning {
+    background-color: #f97316; /* Tailwind's orange-500 */
+    color: white;
+  }
+  
+  .tags-tag-danger {
+    background-color: #ef4444; /* Tailwind's red-500 */
+    color: white;
+  }

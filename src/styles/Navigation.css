@@ -1,0 +1,139 @@
+/* General Layout */
+.navigation-container {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .navigation-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .navigation-layout {
+      flex-direction: row;
+    }
+  }
+  
+  /* Title Styles */
+  .navigation-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Section Title Styles */
+  .navigation-section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Tabs Section */
+  .navigation-tabs {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .navigation-tabs {
+      width: 66.66%;
+    }
+  }
+  
+  .navigation-tab-buttons {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .navigation-tab-button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navigation-tab-button--active {
+    background-color: #f97316; /* Tailwind's orange-500 */
+    color: white;
+  }
+  
+  .navigation-dropdown {
+    position: relative;
+  }
+  
+  .navigation-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .navigation-dropdown-content a {
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navigation-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .navigation-dropdown:hover .navigation-dropdown-content {
+    display: block;
+  }
+  
+  /* Description Styles */
+  .navigation-description {
+    color: #4b5563; /* Tailwind's gray-700 */
+    margin-top: 0.5rem;
+  }
+  
+  .navigation-description-bold {
+    font-weight: bold;
+  }
+  
+  /* Vertical Menus Section */
+  .navigation-vertical-menu {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .navigation-vertical-menu {
+      width: 33.33%;
+      margin-left: 1rem;
+      margin-top: 0;
+    }
+  }
+  
+  .navigation-menu-list {
+    border: 1px solid #e5e7eb; /* Tailwind's gray-200 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation-menu-item {
+    padding: 0.75rem 1rem;
+    color: #4b5563; /* Tailwind's gray-700 */
+    cursor: pointer;
+  }
+  
+  .navigation-menu-item:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .navigation-menu-item--active {
+    background-color: #f97316; /* Tailwind's orange-500 */
+    color: white;
+  }
+  
+  .navigation-menu-item--disabled {
+    color: #9ca3af; /* Tailwind's gray-400 */
+    cursor: not-allowed;
+  }

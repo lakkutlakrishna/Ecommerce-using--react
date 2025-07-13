@@ -1,0 +1,91 @@
+/* General Styles */
+.support {
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .support h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .support h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .support-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Buttons */
+  .support-options button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .support-options button:nth-of-type(1) {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .support-options button:nth-of-type(2) {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .support-options button:nth-of-type(3) {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .support-options button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .support-options button:nth-of-type(1):hover {
+    background-color: #0056b3;
+  }
+  
+  .support-options button:nth-of-type(2):hover {
+    background-color: #e0a800;
+  }
+  
+  .support-options button:nth-of-type(3):hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .support {
+      padding: 15px;
+    }
+  
+    .support-options button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }

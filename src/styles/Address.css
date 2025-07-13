@@ -1,0 +1,190 @@
+/* General Styles */
+.address-container {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top: -3%;
+}
+
+/* Breadcrumb Styles */
+.address-breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.address-breadcrumb-link {
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.address-breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.address-breadcrumb-separator {
+    margin: 0 8px;
+}
+
+.address-breadcrumb-current {
+    color: #1f2937;
+}
+
+/* Title Styles */
+.address-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+/* Main Content Layout */
+.address-main {
+    display: flex;
+    gap: 20px;
+}
+
+/* Address Section Styles */
+.address-section {
+    flex: 70%; /* Occupy 70% of the width */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.address-content {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.address-content p {
+    margin: 8px 0;
+    color: #4b5563;
+}
+
+.address-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.address-edit-button,
+.address-delete-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.address-edit-button {
+    background-color: #6b7280;
+    color: white;
+}
+
+.address-delete-button {
+    background-color: #ef4444;
+    color: white;
+}
+
+.address-edit-button:hover,
+.address-delete-button:hover {
+    opacity: 0.9;
+}
+
+.address-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.address-back-button,
+.address-new-address-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.address-back-button {
+    background-color: #f97316;
+    color: white;
+}
+
+.address-new-address-button {
+    background-color: #6b7280;
+    color: white;
+}
+
+.address-back-button:hover,
+.address-new-address-button:hover {
+    opacity: 0.9;
+}
+
+/* Sidebar Styles */
+.address-sidebar {
+    flex: 30%; /* Occupy 30% of the width */
+    /* background-color: #ffffff; */
+    padding: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    margin-top: -6%;
+}
+
+.address-sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.address-sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.address-sidebar-link {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.address-sidebar-link:hover {
+    color: #f97316;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .address-main {
+        flex-direction: column;
+    }
+
+    .address-section {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .address-sidebar {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .address-actions {
+        position: static;
+        margin-bottom: 16px;
+    }
+
+    .address-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Container Styling */
+  .returns {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styling */
+  .returns h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Returns List Container */
+  .returns-list {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+  }
+  .return-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Return Card Styling */
+  .return-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+  }
+  
+  .return-card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .return-card strong {
+    color: #333;
+  }
+  
+  /* Status Colors */
+  .return-card p:last-child {
+    font-weight: bold;
+  }
+  
+  .return-card p:last-child {
+    color: #007bff; /* Default status color */
+  }
+  
+  .return-card p:last-child.status-approved {
+    color: #28a745; /* Green for approved */
+  }
+  
+  .return-card p:last-child.status-processing {
+    color: #ffc107; /* Yellow for processing */
+  }
+  
+  /* No Returns Found Message */
+  .returns-list p {
+    text-align: center;
+    color: #888;
+    font-size: 1rem;
+  }
+  
+  /* Submit Return Request Button */
+  .returns button {
+    display: block;
+    margin: 1.5rem auto 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .returns button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .returns button:focus {
+    outline: 2px solid #004085;
+    outline-offset: 2px;
+  }

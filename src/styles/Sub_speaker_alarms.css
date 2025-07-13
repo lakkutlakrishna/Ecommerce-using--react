@@ -1,0 +1,311 @@
+/* General Styles */
+.Sub_speaker_alarms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    color: #1a1a1a;
+  }
+  
+  .Sub_speaker_alarms-header {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #f97316;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .Sub_speaker_alarms-description {
+    margin-bottom: 24px;
+    color: #666;
+  }
+  
+  /* Refine Search */
+  .Sub_speaker_alarms-refine-search {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .Sub_speaker_alarms-refine-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center; /* Align buttons vertically */
+  }
+  
+  .Sub_speaker_alarms-refine-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .Sub_speaker_alarms-refine-button:hover {
+    border-color: #f97316;
+  }
+  
+  .Sub_speaker_alarms-refine-button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+  .Sub_speaker_alarms-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .Sub_speaker_alarms-more-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_speaker_alarms-more-button span {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  /* Grid View and Sort Options */
+  .Sub_speaker_alarms-grid-sort-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .Sub_speaker_alarms-grid-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .Sub_speaker_alarms-button-active{
+    background-color: orange !important;
+    color: white !important;
+  }
+  
+  .Sub_speaker_alarms-grid-view-button {
+    padding: 6px 12px;
+    border: 1px solid #d1d5db;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_speaker_alarms-grid-view-button.active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_speaker_alarms-sort-options {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .Sub_speaker_alarms-sort-select {
+    border: 1px solid #d1d5db;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  .Sub_speaker_alarms-compare-button {
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_speaker_alarms-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  /* Product Grid */
+  .Sub_speaker_alarms-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .Sub_speaker_alarms-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Sub_speaker_alarms-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .Sub_speaker_alarms-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .Sub_speaker_alarms-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Product Card */
+  .Sub_speaker_alarms-product-card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Sub_speaker_alarms-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Sub_speaker_alarms-product-image {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Sub_speaker_alarms-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Sub_speaker_alarms-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_speaker_alarms-product-card:hover .Sub_speaker_alarms-overlay {
+    opacity: 1;
+  }
+  
+  .Sub_speaker_alarms-overlay-button {
+    background-color: #ea580c;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .Sub_speaker_alarms-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  
+  .Sub_speaker_alarms-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_speaker_alarms-star {
+    color: #fbbf24;
+  }
+  
+  .Sub_speaker_alarms-rating-count {
+    color: #6b7280;
+  }
+  
+  .Sub_speaker_alarms-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_speaker_alarms-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_speaker_alarms-product-card:hover .Sub_speaker_alarms-actions {
+    opacity: 1;
+  }
+  
+  .Sub_speaker_alarms-action-button {
+    color: #f97316;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .Sub_speaker_alarms-action-button:hover {
+    color: #ea580c;
+  }
+  
+  /* Table View */
+  .Sub_speaker_alarms-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Sub_speaker_alarms-table th,
+  .Sub_speaker_alarms-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .Sub_speaker_alarms-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+  }
+  
+  .Sub_speaker_alarms-table-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .Sub_speaker_alarms-table-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+
+
+
+
+
+  
+
+  .Sub_speaker_alarms-no-products {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .Sub_speaker_alarms-continue-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Sub_speaker_alarms-continue-button:hover {
+    background-color: #ea580c;
+  }

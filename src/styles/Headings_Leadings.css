@@ -1,0 +1,125 @@
+/* Container Styles */
+.hl-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6; /* Gray-100 */
+}
+
+/* Grid Layout */
+.hl-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Section Styles */
+.hl-section {
+  margin-bottom: 2rem;
+}
+
+.hl-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hl-section-description {
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray-500 */
+  margin-bottom: 1rem;
+}
+
+/* Content Box Styles */
+.hl-content-box {
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb; /* Gray-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Heading Styles */
+.hl-heading {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.hl-h1 {
+  font-size: 2.25rem; /* 36px */
+}
+
+.hl-h2 {
+  font-size: 1.875rem; /* 30px */
+}
+
+.hl-h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+.hl-h4 {
+  font-size: 1.25rem; /* 20px */
+}
+
+.hl-h5 {
+  font-size: 1.125rem; /* 18px */
+}
+
+.hl-h6 {
+  font-size: 1rem; /* 16px */
+}
+
+/* Lead Styles */
+.hl-lead-bold {
+  font-size: 1.125rem; /* 18px */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hl-lead-text {
+  font-size: 1.125rem; /* 18px */
+  margin-bottom: 1rem;
+}
+
+.hl-text {
+  margin-bottom: 1rem;
+}
+
+/* Code Container Styles */
+.hl-code-container {
+  position: relative;
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 1rem;
+  border: 1px solid #e5e7eb; /* Gray-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Copy Button Styles */
+.hl-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #374151; /* Gray-700 */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.hl-copy-btn:hover {
+  background-color: #1d4ed8; /* Blue-700 */
+  color: white;
+}
+
+/* Code Content Styles */
+.hl-code-content {
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  margin: 0;
+  overflow-x: auto;
+}

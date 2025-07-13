@@ -1,0 +1,47 @@
+/* Container */
+.Women_windows-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Breadcrumb */
+.Women_windows-breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.Women_windows-breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.Women_windows-breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.Women_windows-breadcrumb-separator {
+    margin: 0 0.5rem;
+}
+
+/* Main Content */
+.Women_windows-main-content {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Left Section */
+.Women_windows-left-section {
+    flex: 1;
+    max-width: 25%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Right Section */
+.Women_windows-right-section {
+    flex: 3;
+    max-width: 75%; /* Adjust as needed */
+}

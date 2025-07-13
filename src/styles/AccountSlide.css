@@ -1,0 +1,160 @@
+/* Overlay */
+.account-slide-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  /* Dimmed Background */
+  .dimmed-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dimmed background */
+    z-index: -1; /* Place behind the container */
+  }
+  
+  /* Account Slide Container */
+  .account-slide-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px; /* Adjust based on your design */
+    position: relative;
+    z-index: 1; /* Ensure it's above the dimmed background */
+  }
+  
+  /* Header */
+  .account-slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .account-slide-header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+  .account-slide-icon {
+    font-size: 20px;
+    color: #f97316; /* Orange-500 */
+  }
+  
+  .account-slide-title {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .account-slide-close-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  /* Main Content */
+  .account-slide-body {
+    padding: 16px;
+  }
+  
+  /* Dropdown Container */
+  .account-slide-dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .account-slide-dropdown-item {
+    width: 48%; /* Two dropdowns side by side */
+  }
+  
+  .account-slide-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #4a5568; /* Gray-700 */
+  }
+  
+  /* Custom Select */
+  .account-slide-custom-select-wrapper {
+    position: relative;
+  }
+  
+  .account-slide-custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding: 8px;
+    padding-right: 32px; /* Space for the custom arrow */
+    border: 1px solid #e2e8f0; /* Light gray border */
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    color: #4a5568; /* Gray-700 */
+  }
+  
+  .account-slide-custom-select-wrapper::after {
+    content: "\f078"; /* FontAwesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #4a5568; /* Gray-700 */
+  }
+  
+  /* Divider */
+  .account-slide-divider {
+    border: none;
+    border-top: 1px solid #e2e8f0; /* Light gray divider */
+    margin: 24px 0;
+  }
+  
+  /* Icon Grid */
+  .account-slide-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 16px;
+  }
+  
+  .account-slide-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .account-slide-icon-container:hover {
+    background-color: #fef3c7; /* Light yellow hover effect */
+    cursor: pointer;
+  }
+  
+  .account-slide-icon {
+    font-size: 2rem;
+    color: #f97316; /* Orange-500 */
+  }
+  
+  .account-slide-icon-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #4a5568; /* Gray-700 */
+  }

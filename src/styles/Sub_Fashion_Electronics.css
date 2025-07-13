@@ -1,0 +1,223 @@
+/* Container */
+.Sub_Fashion_Electronics-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: -6%;
+    margin-left: -1%;
+  }
+  
+  /* Title */
+  .Sub_Fashion_Electronics-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Controls */
+  .Sub_Fashion_Electronics-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .Sub_Fashion_Electronics-grid-controls,
+  .Sub_Fashion_Electronics-sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Sub_Fashion_Electronics-control-label {
+    font-weight: 600;
+  }
+  
+  .Sub_Fashion_Electronics-grid-view-button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Fashion_Electronics-grid-view-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Fashion_Electronics-button-active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Fashion_Electronics-select {
+    border: 1px solid #d1d5db;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  .Sub_Fashion_Electronics-compare-button {
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Fashion_Electronics-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  /* Product Grid */
+  .Sub_Fashion_Electronics-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .Sub_Fashion_Electronics-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Sub_Fashion_Electronics-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .Sub_Fashion_Electronics-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .Sub_Fashion_Electronics-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Product Card */
+  .Sub_Fashion_Electronics-product-card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .Sub_Fashion_Electronics-product-image {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Sub_Fashion_Electronics-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Sub_Fashion_Electronics-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Fashion_Electronics-product-card:hover .Sub_Fashion_Electronics-overlay {
+    opacity: 1;
+  }
+  
+  .Sub_Fashion_Electronics-overlay-button {
+    background-color: #ea580c;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .Sub_Fashion_Electronics-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  
+  .Sub_Fashion_Electronics-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Fashion_Electronics-star {
+    color: #fbbf24;
+  }
+  
+  .Sub_Fashion_Electronics-rating-count {
+    color: #6b7280;
+  }
+  
+  .Sub_Fashion_Electronics-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Fashion_Electronics-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Fashion_Electronics-product-card:hover .Sub_Fashion_Electronics-actions {
+    opacity: 1;
+  }
+  
+  .Sub_Fashion_Electronics-action-button {
+    color: #f97316;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .Sub_Fashion_Electronics-action-button:hover {
+    color: #ea580c;
+  }
+  
+  /* Table View */
+  .Sub_Fashion_Electronics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Sub_Fashion_Electronics-table th,
+  .Sub_Fashion_Electronics-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .Sub_Fashion_Electronics-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+  }
+  
+  .Sub_Fashion_Electronics-table-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .Sub_Fashion_Electronics-table-actions {
+    display: flex;
+    gap: 12px;
+  }

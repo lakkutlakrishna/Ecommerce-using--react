@@ -1,0 +1,147 @@
+/* Container Styles */
+.Alignment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6; /* Gray-100 */
+}
+
+/* Grid Layout */
+.Alignment-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Section Styles */
+.Alignment-section {
+  margin-bottom: 2rem;
+}
+
+.Alignment-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Content Box Styles */
+.Alignment-content-box {
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb; /* Gray-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Copy Button Styles */
+.Alignment-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #374151; /* Gray-700 */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.Alignment-copy-btn:hover {
+  background-color: #1d4ed8; /* Blue-700 */
+  color: white;
+}
+
+/* Address Styles */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+
+/* Emphasis Classes */
+.Alignment-text-muted {
+  color: #6b7280; /* Gray-500 */
+}
+
+.Alignment-text-primary {
+  color: #3b82f6; /* Blue-500 */
+}
+
+.Alignment-text-warning {
+  color: #f59e0b; /* Yellow-500 */
+}
+
+.Alignment-text-danger {
+  color: #ef4444; /* Red-500 */
+}
+
+.Alignment-text-success {
+  color: #10b981; /* Green-500 */
+}
+
+.Alignment-text-info {
+  color: #06b6d4; /* Cyan-500 */
+}
+
+/* Alignment Classes */
+.Alignment-text-left {
+  text-align: left;
+}
+
+.Alignment-text-center {
+  text-align: center;
+}
+
+.Alignment-text-right {
+  text-align: right;
+}
+
+.Alignment-text-justify {
+  text-align: justify;
+}
+
+/* Dropcaps Styles */
+.Alignment-dropcap {
+  font-size: 3rem;
+  float: left;
+  line-height: 1;
+  margin-right: 0.5rem;
+}
+
+.Alignment-color-custom {
+  color: #3b82f6; /* Blue-500 */
+}
+
+.Alignment-color-dark {
+  color: #1f2937; /* Gray-800 */
+}
+
+/* Heading Helper Classes */
+.Alignment-mark {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.Alignment-bg-custom {
+  background-color: #3b82f6; /* Blue-500 */
+}
+
+.Alignment-color-white {
+  color: white;
+}
+
+.Alignment-underline {
+  text-decoration: underline;
+}
+
+/* Code Content Styles */
+.Alignment-code-content {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  margin-top: 1rem;
+}

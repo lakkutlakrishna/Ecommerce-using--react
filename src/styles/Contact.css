@@ -1,0 +1,107 @@
+/* General Styles */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Breadcrumb */
+  .contact-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .contact-breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+  }
+  
+  .contact-breadcrumb-link:hover {
+    color: #374151;
+  }
+  
+  .contact-breadcrumb-icon {
+    margin-right: 4px;
+  }
+  
+  .contact-breadcrumb-separator {
+    color: #6b7280;
+  }
+  
+  .contact-breadcrumb-text {
+    color: #6b7280;
+  }
+  
+  /* Contact Form Container */
+  .contact-form-container {
+    max-width: 480px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  /* Contact Form Title */
+  .contact-form-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 16px;
+  }
+  
+  /* Contact Form Description */
+  .contact-form-description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 24px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Contact Form Input */
+  .contact-form-input,
+  .contact-form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #f3f4f6;
+    font-size: 1rem;
+    color: #1f2937;
+  }
+  
+  .contact-form-input::placeholder,
+  .contact-form-textarea::placeholder {
+    color: #9ca3af;
+  }
+  
+  .contact-form-textarea {
+    height: 128px;
+    resize: none;
+  }
+  
+  /* Contact Form Button */
+  .contact-form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6b7280;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form-button:hover {
+    background-color: #4b5563;
+  }

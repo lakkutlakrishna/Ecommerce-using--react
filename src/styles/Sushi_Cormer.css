@@ -1,0 +1,47 @@
+/* Container */
+.Sushi_Cormer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Breadcrumb */
+.Sushi_Cormer-breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.Sushi_Cormer-breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.Sushi_Cormer-breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.Sushi_Cormer-breadcrumb-separator {
+    margin: 0 0.5rem;
+}
+
+/* Main Content */
+.Sushi_Cormer-main-content {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Left Section */
+.Sushi_Cormer-left-section {
+    flex: 1;
+    max-width: 25%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Right Section */
+.Sushi_Cormer-right-section {
+    flex: 3;
+    max-width: 75%; /* Adjust as needed */
+}

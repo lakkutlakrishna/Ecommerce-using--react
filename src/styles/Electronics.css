@@ -1,0 +1,226 @@
+/* Solid black border for the entire component */
+.electronics-container {
+    border: 2px solid black; /* Solid black border */
+    max-width: 1100px;
+    margin-top: 2%;
+    margin-left: 5.4%;
+    /* margin: 0; */
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Highlight selected category */
+.electronics-nav-links a.active {
+    color: #f97316; /* Orange color */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+/* Navigation */
+.electronics-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.electronics-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f97316;
+}
+
+.electronics-nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.electronics-nav-links a {
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.electronics-nav-links a:hover {
+    color: #f97316;
+}
+
+/* Main Content */
+.electronics-main-content {
+    display: flex;
+    margin-top: 1rem;
+}
+
+/* Sidebar */
+.electronics-sidebar {
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #d1d5db;
+}
+
+.electronics-sidebar-image {
+    position: relative;
+    height: 100%;
+}
+
+.electronics-sidebar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.electronics-sidebar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.electronics-sidebar-image:hover .electronics-sidebar-overlay {
+    opacity: 1;
+}
+
+.electronics-sidebar-text {
+    text-align: center;
+    margin-top: 0.5rem;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.electronics-sidebar-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.electronics-sidebar-link {
+    color: #f97316;
+    text-decoration: none;
+}
+
+/* Products */
+.electronics-products {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.electronics-product {
+    border: 1px solid #d1d5db;
+    padding: 1rem;
+    position: relative;
+}
+
+.electronics-product-image {
+    position: relative;
+}
+
+.electronics-product-image img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.electronics-product-image:hover img {
+    transform: scale(1.05);
+}
+
+.electronics-product-discount {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: #f97316;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.electronics-product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.electronics-product:hover .electronics-product-overlay {
+    display: flex;
+}
+
+.electronics-product-icon {
+    background-color: #f97316;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.electronics-product-button {
+    background-color: #f97316;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.electronics-product-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.electronics-product-icons i {
+    color: #f97316;
+    cursor: pointer;
+}
+
+/* Product Details */
+.electronics-product-details {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.electronics-product-name {
+    font-weight: bold;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Hide title on hover */
+.electronics-product:hover .electronics-product-name {
+    opacity: 0; /* Hide the title */
+}
+
+.electronics-product-price {
+    color: #f97316;
+}
+
+.electronics-product-original-price {
+    text-decoration: line-through;
+    color: #6b7280;
+    margin-left: 0.5rem;
+}

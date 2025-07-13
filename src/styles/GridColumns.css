@@ -1,0 +1,89 @@
+/* Container Styles */
+.grid-columns-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Title Styles */
+  .grid-columns-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Styles */
+  .grid-section {
+    margin-bottom: 2rem;
+  }
+  
+  .grid-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #f97316; /* Orange-500 */
+  }
+  
+  .grid-section-content {
+    border-top: 1px solid #d1d5db; /* Gray-300 */
+    border-bottom: 1px solid #d1d5db; /* Gray-300 */
+    padding: 1rem 0;
+  }
+  
+  /* Text Alignment */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  /* Grid Columns Layout */
+  .grid-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+  }
+  
+  .grid-column {
+    padding: 0.5rem;
+  }
+  
+  /* 1/2 Columns */
+  .grid-cols-2 .grid-column {
+    width: 50%;
+  }
+  
+  /* 1/3 Columns */
+  .grid-cols-3 .grid-column {
+    width: 33.33%;
+  }
+  
+  /* 2/3 Columns */
+  .grid-cols-2-3 .grid-column:first-child {
+    width: 66.66%;
+  }
+  
+  .grid-cols-2-3 .grid-column:last-child {
+    width: 33.33%;
+  }
+  
+  /* 1/4 Columns */
+  .grid-cols-4 .grid-column {
+    width: 25%;
+  }
+  
+  /* 3/4 Columns */
+  .grid-cols-3-4 .grid-column:first-child {
+    width: 75%;
+  }
+  
+  .grid-cols-3-4 .grid-column:last-child {
+    width: 25%;
+  }
+  
+  /* 1/6 Columns */
+  .grid-cols-6 .grid-column {
+    width: 16.66%;
+  }

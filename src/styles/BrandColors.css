@@ -1,0 +1,123 @@
+/* Container Styles */
+.brand-container {
+  max-width: 1200px;
+  margin-left: 2%;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6; /* Gray-100 */
+}
+
+/* Title Styles */
+.brand-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.brand-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Swatch Grid Layout */
+.brand-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns per row */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design for Swatch Grid */
+@media (max-width: 768px) {
+  .brand-swatch-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-swatch-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+
+/* Swatch Item Styles */
+.brand-swatch-item {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+.brand-swatch-hex {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.brand-swatch-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* Brand Colors */
+.brand-color-primary {
+  background-color: #324c69; /* Brand Primary */
+}
+
+.brand-color-secondary {
+  background-color: #f9731f; /* Brand Secondary */
+}
+
+.brand-color-warning {
+  background-color: #f0ad4e; /* Brand Warning */
+}
+
+.brand-color-danger {
+  background-color: #d9534f; /* Brand Danger */
+}
+
+.brand-color-info {
+  background-color: #5bc0de; /* Brand Info */
+}
+
+.brand-color-success {
+  background-color: #5cb85c; /* Brand Success */
+}
+
+/* Code Container Styles */
+.brand-code-container {
+  position: relative;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Copy Button Styles */
+.brand-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #3b82f6; /* Blue-500 */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.brand-copy-btn:hover {
+  background-color: #1d4ed8; /* Blue-700 */
+  color: white;
+}
+
+/* Code Content Styles */
+.brand-code-content {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}

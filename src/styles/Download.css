@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.Download-container {
+    max-width: 1200px;
+    margin-top: -2%;
+    padding: 20px;
+}
+
+/* Breadcrumb */
+.Download-breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.Download-breadcrumb-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.Download-breadcrumb-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.Download-breadcrumb-separator {
+    margin: 0 8px;
+    color: #666;
+}
+
+/* Main Content and Sidebar Layout */
+.Download-content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between main content and sidebar */
+}
+
+/* Main Content (Order History Section) */
+.Download-main {
+    flex: 70%; /* Occupy 70% of the width */
+}
+
+.Download-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.Download-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Download-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.Download-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Download-continue-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Download-continue-button:hover {
+    background-color: #5a6268;
+}
+
+/* Sidebar */
+.Download-sidebar {
+    flex: 30%; /* Occupy 30% of the width */
+    /* background-color: #fff; */
+    margin-top: -3%;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.Download-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Download-sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Download-sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Download-sidebar-menu li {
+    margin-bottom: 8px;
+}
+
+.Download-sidebar-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.Download-sidebar-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Download-content-wrapper {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+    }
+
+    .Download-main {
+        flex: 100%; /* Full width on smaller screens */
+    }
+
+    .Download-sidebar {
+        flex: 100%; /* Full width on smaller screens */
+    }
+}

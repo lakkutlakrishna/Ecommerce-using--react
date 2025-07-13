@@ -1,0 +1,111 @@
+/* Container Styles */
+.grayscale-container {
+  max-width: 1200px;
+  margin-left: 2%;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+/* Title Styles */
+.grayscale-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Swatch Grid Layout */
+.grayscale-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns per row */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design for Swatch Grid */
+@media (max-width: 768px) {
+  .grayscale-swatch-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grayscale-swatch-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+
+/* Swatch Item Styles */
+.grayscale-swatch-item {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Gray Colors */
+.grayscale-color-darker {
+  background-color: #333333; /* Gray Darker */
+  color: white;
+}
+
+.grayscale-color-dark {
+  background-color: #4d4d4d; /* Gray Dark */
+  color: white;
+}
+
+.grayscale-color-gray {
+  background-color: #666666; /* Gray */
+  color: white;
+}
+
+.grayscale-color-light {
+  background-color: #999999; /* Gray Light */
+  color: #333333;
+}
+
+.grayscale-color-lighter {
+  background-color: #cccccc; /* Gray Lighter */
+  color: #333333;
+}
+
+.grayscale-color-lightest {
+  background-color: #e6e6e6; /* Gray Lightest */
+  color: #333333;
+}
+
+/* Code Container Styles */
+.grayscale-code-container {
+  position: relative;
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb; /* Gray-200 */
+}
+
+/* Copy Button Styles */
+.grayscale-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #6b7280; /* Gray-500 */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.grayscale-copy-btn:hover {
+  background-color: #1d4ed8; /* Blue-700 */
+  color: white;
+}
+
+/* Code Content Styles */
+.grayscale-code-content {
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray-500 */
+  white-space: pre-wrap;
+  overflow-x: auto;
+}

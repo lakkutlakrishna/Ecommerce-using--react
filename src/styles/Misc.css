@@ -1,0 +1,131 @@
+/* Container Styles */
+.misc-container {
+  max-width: 1200px;
+  margin-left: 1%;
+  padding: 1.5rem;
+}
+
+/* Title Styles */
+.misc-title {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.misc-subtitle {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Panels Grid Layout */
+.misc-panels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns per row */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design for Panels */
+@media (max-width: 768px) {
+  .misc-panels-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .misc-panels-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+
+/* Panel Base Styles */
+.misc-panel {
+  border: 1px solid #e5e7eb; /* Gray-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Panel Heading */
+.misc-panel-heading {
+  padding: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb; /* Gray-200 */
+}
+
+/* Panel Content */
+.misc-panel-content {
+  padding: 1rem;
+}
+
+/* Default Panel */
+.misc-panel-default .misc-panel-heading {
+  background-color: #f3f4f6; /* Gray-100 */
+}
+
+/* Success Panel */
+.misc-panel-success .misc-panel-heading {
+  background-color: #dcfce7; /* Green-100 */
+}
+
+/* Danger Panel */
+.misc-panel-danger .misc-panel-heading {
+  background-color: #fee2e2; /* Red-100 */
+}
+
+/* Primary Panel */
+.misc-panel-primary .misc-panel-heading {
+  background-color: #3b82f6; /* Blue-500 */
+  color: white;
+}
+
+/* Warning Panel */
+.misc-panel-warning .misc-panel-heading {
+  background-color: #fef3c7; /* Yellow-100 */
+}
+
+/* Info Panel */
+.misc-panel-info .misc-panel-heading {
+  background-color: #dbeafe; /* Blue-100 */
+}
+
+/* Code Container Styles */
+.misc-code-container {
+  position: relative;
+  background-color: #f9fafb; /* Gray-50 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Copy Button Styles */
+.misc-copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #e5e7eb; /* Gray-200 */
+  color: #1f2937; /* Gray-800 */
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.misc-copy-button:hover {
+  background-color: #3b82f6; /* Blue-500 */
+  color: white;
+}
+
+/* Code Content Styles */
+.misc-code-content {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  margin: 0;
+}

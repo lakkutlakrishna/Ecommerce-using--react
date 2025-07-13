@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Container Styling */
+  .security {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styling */
+  .security h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Security Options Container */
+  .security-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Button Styling */
+  .security-options button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover Effect for Buttons */
+  .security-options button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  /* Focus State for Accessibility */
+  .security-options button:focus {
+    outline: 2px solid #004085;
+    outline-offset: 2px;
+  }
+  
+  /* Special Styling for Delete Account Button */
+  .security-options button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .security-options button:last-child:hover {
+    background-color: #a71d2a;
+  }

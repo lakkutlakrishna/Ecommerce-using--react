@@ -1,0 +1,150 @@
+/* General Styles */
+.coming-soon-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Breadcrumb */
+  .coming-soon-breadcrumb {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  
+  .coming-soon-breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+  }
+  
+  .coming-soon-breadcrumb-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  .coming-soon-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Hero Section */
+  .coming-soon-hero {
+    position: relative;
+  }
+  
+  .coming-soon-hero-image {
+    width: 100%;
+    height: 384px;
+    object-fit: cover;
+  }
+  
+  .coming-soon-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 16px;
+  }
+  
+  .coming-soon-hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .coming-soon-hero-description {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+  
+  /* Countdown */
+  .coming-soon-countdown {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .coming-soon-countdown-item {
+    text-align: center;
+  }
+  
+  .coming-soon-countdown-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .coming-soon-countdown-label {
+    font-size: 0.875rem;
+    margin-top: 8px;
+  }
+  
+  /* Subscribe Section */
+  .coming-soon-subscribe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .coming-soon-subscribe-input {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px 0 0 8px;
+    flex: 1;
+    outline: none;
+  }
+  
+  .coming-soon-subscribe-button {
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .coming-soon-subscribe-button:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Maintenance Instructions */
+  .coming-soon-instructions {
+    padding: 16px;
+  }
+  
+  .coming-soon-instructions-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .coming-soon-instructions-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: #4b5563;
+  }
+  
+  .coming-soon-instructions-link {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .coming-soon-instructions-link:hover {
+    text-decoration: underline;
+  }

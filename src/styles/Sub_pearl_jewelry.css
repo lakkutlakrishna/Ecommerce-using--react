@@ -1,0 +1,263 @@
+/* Container */
+.Sub_pearly_jewerly-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: -6%;
+    margin-left: -1%;
+  }
+  
+  /* Title */
+  .Sub_pearly_jewerly-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Controls */
+  .Sub_pearly_jewerly-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .Sub_pearly_jewerly-grid-controls,
+  .Sub_pearly_jewerly-sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Sub_pearly_jewerly-control-label {
+    font-weight: 600;
+  }
+  
+  .Sub_pearly_jewerly-grid-view-button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_pearly_jewerly-grid-view-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_pearly_jewerly-button-active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_pearly_jewerly-select {
+    border: 1px solid #d1d5db;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  .Sub_pearly_jewerly-compare-button {
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_pearly_jewerly-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  /* Product Grid */
+  .Sub_pearly_jewerly-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .Sub_pearly_jewerly-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Sub_pearly_jewerly-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .Sub_pearly_jewerly-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .Sub_pearly_jewerly-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Product Card */
+  .Sub_pearly_jewerly-product-card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .Sub_pearly_jewerly-product-image {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Sub_pearly_jewerly-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Sub_pearly_jewerly-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_pearly_jewerly-product-card:hover .Sub_pearly_jewerly-overlay {
+    opacity: 1;
+  }
+  
+  .Sub_pearly_jewerly-overlay-button {
+    background-color: #ea580c;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .Sub_pearly_jewerly-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  
+  .Sub_pearly_jewerly-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_pearly_jewerly-star {
+    color: #fbbf24;
+  }
+  
+  .Sub_pearly_jewerly-rating-count {
+    color: #6b7280;
+  }
+  
+  .Sub_pearly_jewerly-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_pearly_jewerly-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_pearly_jewerly-product-card:hover .Sub_pearly_jewerly-actions {
+    opacity: 1;
+  }
+  
+  .Sub_pearly_jewerly-action-button {
+    color: #f97316;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .Sub_pearly_jewerly-action-button:hover {
+    color: #ea580c;
+  }
+  
+  /* Table View */
+  .Sub_pearly_jewerly-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Sub_pearly_jewerly-table th,
+  .Sub_pearly_jewerly-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .Sub_pearly_jewerly-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+  }
+  
+  .Sub_pearly_jewerly-table-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .Sub_pearly_jewerly-table-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  /* Pagination */
+.Sub_pearly_jewerly-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .Sub_pearly_jewerly-pagination button {
+    padding: 6px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background-color: #f3f4f6;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_pearly_jewerly-pagination button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_pearly_jewerly-pagination button.active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_pearly_jewerly-pagination button:disabled {
+    background-color: #e5e7eb;
+    cursor: not-allowed;
+  }
+  
+  /* Showing Items Count */
+  .Sub_pearly_jewerly-showing-items {
+    text-align: center;
+    margin-top: 10px;
+    color: #6b7280;
+  }

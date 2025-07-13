@@ -1,0 +1,223 @@
+/* Container */
+.Sub_Egante_mangetes-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: -6%;
+    margin-left: -1%;
+  }
+  
+  /* Title */
+  .Sub_Egante_mangetes-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Controls */
+  .Sub_Egante_mangetes-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .Sub_Egante_mangetes-grid-controls,
+  .Sub_Egante_mangetes-sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Sub_Egante_mangetes-control-label {
+    font-weight: 600;
+  }
+  
+  .Sub_Egante_mangetes-grid-view-button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Egante_mangetes-grid-view-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Egante_mangetes-button-active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Egante_mangetes-select {
+    border: 1px solid #d1d5db;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  .Sub_Egante_mangetes-compare-button {
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Egante_mangetes-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  /* Product Grid */
+  .Sub_Egante_mangetes-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .Sub_Egante_mangetes-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Sub_Egante_mangetes-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .Sub_Egante_mangetes-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .Sub_Egante_mangetes-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Product Card */
+  .Sub_Egante_mangetes-product-card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .Sub_Egante_mangetes-product-image {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Sub_Egante_mangetes-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Sub_Egante_mangetes-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Egante_mangetes-product-card:hover .Sub_Egante_mangetes-overlay {
+    opacity: 1;
+  }
+  
+  .Sub_Egante_mangetes-overlay-button {
+    background-color: #ea580c;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .Sub_Egante_mangetes-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  
+  .Sub_Egante_mangetes-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Egante_mangetes-star {
+    color: #fbbf24;
+  }
+  
+  .Sub_Egante_mangetes-rating-count {
+    color: #6b7280;
+  }
+  
+  .Sub_Egante_mangetes-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Egante_mangetes-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Egante_mangetes-product-card:hover .Sub_Egante_mangetes-actions {
+    opacity: 1;
+  }
+  
+  .Sub_Egante_mangetes-action-button {
+    color: #f97316;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .Sub_Egante_mangetes-action-button:hover {
+    color: #ea580c;
+  }
+  
+  /* Table View */
+  .Sub_Egante_mangetes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Sub_Egante_mangetes-table th,
+  .Sub_Egante_mangetes-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .Sub_Egante_mangetes-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+  }
+  
+  .Sub_Egante_mangetes-table-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .Sub_Egante_mangetes-table-actions {
+    display: flex;
+    gap: 12px;
+  }

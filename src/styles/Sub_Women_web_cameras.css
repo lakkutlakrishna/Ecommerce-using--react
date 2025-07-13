@@ -1,0 +1,311 @@
+/* General Styles */
+.Sub_Women_web_cameras-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    color: #1a1a1a;
+  }
+  
+  .Sub_Women_web_cameras-header {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #f97316;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .Sub_Women_web_cameras-description {
+    margin-bottom: 24px;
+    color: #666;
+  }
+  
+  /* Refine Search */
+  .Sub_Women_web_cameras-refine-search {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .Sub_Women_web_cameras-refine-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center; /* Align buttons vertically */
+  }
+  
+  .Sub_Women_web_cameras-refine-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .Sub_Women_web_cameras-refine-button:hover {
+    border-color: #f97316;
+  }
+  
+  .Sub_Women_web_cameras-refine-button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+  .Sub_Women_web_cameras-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .Sub_Women_web_cameras-more-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Women_web_cameras-more-button span {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  /* Grid View and Sort Options */
+  .Sub_Women_web_cameras-grid-sort-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .Sub_Women_web_cameras-grid-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .Sub_Women_web_cameras-button-active{
+    background-color: orange !important;
+    color: white !important;
+  }
+  
+  .Sub_Women_web_cameras-grid-view-button {
+    padding: 6px 12px;
+    border: 1px solid #d1d5db;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Women_web_cameras-grid-view-button.active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Women_web_cameras-sort-options {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .Sub_Women_web_cameras-sort-select {
+    border: 1px solid #d1d5db;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  .Sub_Women_web_cameras-compare-button {
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Women_web_cameras-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  /* Product Grid */
+  .Sub_Women_web_cameras-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .Sub_Women_web_cameras-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Sub_Women_web_cameras-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .Sub_Women_web_cameras-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .Sub_Women_web_cameras-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Product Card */
+  .Sub_Women_web_cameras-product-card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Sub_Women_web_cameras-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Sub_Women_web_cameras-product-image {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Sub_Women_web_cameras-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Sub_Women_web_cameras-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Women_web_cameras-product-card:hover .Sub_Women_web_cameras-overlay {
+    opacity: 1;
+  }
+  
+  .Sub_Women_web_cameras-overlay-button {
+    background-color: #ea580c;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .Sub_Women_web_cameras-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  
+  .Sub_Women_web_cameras-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Women_web_cameras-star {
+    color: #fbbf24;
+  }
+  
+  .Sub_Women_web_cameras-rating-count {
+    color: #6b7280;
+  }
+  
+  .Sub_Women_web_cameras-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Women_web_cameras-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Women_web_cameras-product-card:hover .Sub_Women_web_cameras-actions {
+    opacity: 1;
+  }
+  
+  .Sub_Women_web_cameras-action-button {
+    color: #f97316;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .Sub_Women_web_cameras-action-button:hover {
+    color: #ea580c;
+  }
+  
+  /* Table View */
+  .Sub_Women_web_cameras-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Sub_Women_web_cameras-table th,
+  .Sub_Women_web_cameras-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .Sub_Women_web_cameras-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+  }
+  
+  .Sub_Women_web_cameras-table-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .Sub_Women_web_cameras-table-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+
+
+
+
+
+  
+
+  .Sub_Women_web_cameras-no-products {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .Sub_Women_web_cameras-continue-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Sub_Women_web_cameras-continue-button:hover {
+    background-color: #ea580c;
+  }

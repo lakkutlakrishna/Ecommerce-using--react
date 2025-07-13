@@ -1,0 +1,47 @@
+/* Sub_Dental_magela.css */
+.sub-dental-magela__container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 42rem;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.sub-dental-magela__title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: black;
+  margin-left: -80%;
+  margin-bottom: 0.25rem;
+}
+
+.sub-dental-magela__border {
+  border-bottom: 2px solid #f97316;
+  width: 4rem; margin-left: -85%;
+  margin-bottom: 1rem;
+}
+
+.sub-dental-magela__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.sub-dental-magela__message {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.sub-dental-magela__button {
+  padding: 0.5rem 1rem;
+  background-color: #9ca3af;
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}

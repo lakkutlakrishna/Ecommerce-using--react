@@ -1,0 +1,282 @@
+/* General Styles */
+.Sub_Jewelry-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    color: #1a1a1a;
+  }
+  
+  .Sub_Jewelry-header {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #f97316;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .Sub_Jewelry-description {
+    margin-bottom: 24px;
+    color: #666;
+  }
+  
+  /* Refine Search */
+  .Sub_Jewelry-refine-search {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .Sub_Jewelry-refine-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center; /* Align buttons vertically */
+  }
+  
+  .Sub_Jewelry-refine-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .Sub_Jewelry-refine-button:hover {
+    border-color: #f97316;
+  }
+  
+  .Sub_Jewelry-refine-button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+  .Sub_Jewelry-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .Sub_Jewelry-more-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Jewelry-more-button span {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  /* Grid View and Sort Options */
+  .Sub_Jewelry-grid-sort-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .Sub_Jewelry-grid-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .Sub_Jewelry-button-active{
+    background-color: orange !important;
+    color: white !important;
+  }
+  
+  .Sub_Jewelry-grid-view-button {
+    padding: 6px 12px;
+    border: 1px solid #d1d5db;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Jewelry-grid-view-button.active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .Sub_Jewelry-sort-options {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .Sub_Jewelry-sort-select {
+    border: 1px solid #d1d5db;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  
+  .Sub_Jewelry-compare-button {
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Sub_Jewelry-compare-button:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  /* Product Grid */
+  .Sub_Jewelry-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .Sub_Jewelry-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Sub_Jewelry-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .Sub_Jewelry-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .Sub_Jewelry-grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Product Card */
+  .Sub_Jewelry-product-card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Sub_Jewelry-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Sub_Jewelry-product-image {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Sub_Jewelry-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Sub_Jewelry-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Jewelry-product-card:hover .Sub_Jewelry-overlay {
+    opacity: 1;
+  }
+  
+  .Sub_Jewelry-overlay-button {
+    background-color: #ea580c;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  .Sub_Jewelry-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  
+  .Sub_Jewelry-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Jewelry-star {
+    color: #fbbf24;
+  }
+  
+  .Sub_Jewelry-rating-count {
+    color: #6b7280;
+  }
+  
+  .Sub_Jewelry-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 12px;
+  }
+  
+  .Sub_Jewelry-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Sub_Jewelry-product-card:hover .Sub_Jewelry-actions {
+    opacity: 1;
+  }
+  
+  .Sub_Jewelry-action-button {
+    color: #f97316;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .Sub_Jewelry-action-button:hover {
+    color: #ea580c;
+  }
+  
+  /* Table View */
+  .Sub_Jewelry-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Sub_Jewelry-table th,
+  .Sub_Jewelry-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .Sub_Jewelry-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+  }
+  
+  .Sub_Jewelry-table-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .Sub_Jewelry-table-actions {
+    display: flex;
+    gap: 12px;
+  }

@@ -1,0 +1,28 @@
+.sub-site-map-container{
+    /* display: table-row; */
+    margin-left: 5%;
+}
+.sub-site-map-main-option {
+    font-weight: bold; 
+    font-style: normal; 
+    color: #000; 
+  }
+  .sub-site-map-main-option:hover{
+    text-decoration: underline; 
+    cursor: pointer;
+    color:orange
+  }
+.option{
+    margin-left: 2%;
+}
+.option:hover{
+    cursor: pointer;
+    color:orange
+}
+.option-option{
+    margin-left: 5%;
+}
+.option-option:hover{
+    cursor: pointer;
+    color:orange
+}

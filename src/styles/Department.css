@@ -1,0 +1,377 @@
+.containe{
+    background-color: #f97316; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+}
+.left-section {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #1f2937; /* Dark gray background */
+    color: white;
+    padding: 8px 16px;
+    margin-left: 20px;
+    /* border-radius: 9999px; Rounded full */
+}
+.left-section i {
+    margin-right: 8px;
+}
+
+.department-text {
+    font-weight: bold;
+}
+
+.left-section .fa-chevron-down {
+    margin-left: 8px;
+}
+
+/* Middle Section */
+.middle-section {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 9999px; /* Rounded full */
+    overflow: hidden;
+    width: 50%;
+}
+
+.category-dropdown {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-right: 1px solid #e5e7eb; /* Light gray border */
+}
+
+.category-dropdown span select{
+    font-size: 14px;
+    border-color:white;
+    color: #6b7280; /* Gray text */
+}
+
+.category-dropdown .fa-chevron-down {
+    margin-left: 4px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #6b7280; /* Gray text */
+}
+
+.search-button {
+    background-color: #1f2937; /* Dark gray background */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 0 9999px 9999px 0; /* Rounded right side */
+}
+
+.search-button:hover {
+    background-color: #374151; /* Slightly darker gray on hover */
+}
+
+/* Right Section */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between icons */
+}
+/* Tooltip Styling */
+.icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 9999px; /* Rounded full */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.icon-container i {
+    color: #1f2937; /* Dark gray icon color */
+}
+/* Static Dropdown Menu Styling */
+.static-dropdown-menu {
+    position: absolute;
+    top: 25%; /* Position below the left-section */
+    margin-left: 2.99%;
+    left: 0;
+    width: 19%; /* Full width of the parent */
+    background-color: white; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 8px; /* Gap between the button and the dropdown */
+    padding: 6px 0;
+    z-index: 10; /* Ensure it appears above other elements */
+    list-style: none; /* Remove bullet points */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+/* Hidden State */
+.static-dropdown-menu.hidden {
+    opacity: 0; /* Make it invisible */
+    visibility: hidden; /* Hide it completely */
+    pointer-events: none; /* Disable interactions */
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px; /* Padding for each option */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size */
+    color: #333; /* Text color */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.dropdown-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.dropdown-text {
+    flex: 1; /* Take up remaining space */
+    /* font-size: 2px; */
+}
+
+.fa-chevron-right {
+    color: #6b7280; /* Gray arrow color */
+}
+/* Tooltip Text */
+.icon-container[data-tooltip]::after {
+    content: attr(data-tooltip); /* Use the value of the data-tooltip attribute */
+    position: absolute;
+    top: 100%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 4px 8px;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 12px; /* Small font size */
+    white-space: nowrap; /* Prevent text wrapping */
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+/* Show Tooltip on Hover */
+.icon-container:hover::after {
+    opacity: 1; /* Make tooltip visible */
+    visibility: visible; /* Make tooltip visible */
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #1f2937; /* Dark gray background */
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 9999px; /* Rounded full */
+}
+
+
+
+
+.fashion-dropdown {
+    position: relative;
+  }
+  .dropdown-submenu {
+    position: absolute;
+    margin-left: 100%;
+    top: 0%; /* Position below the parent item */
+    left: 0; /* Align with the left edge of the parent item */
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    min-width: 400px; /* Adjust as needed */
+    white-space: nowrap;
+}
+
+.fashion-dropdown, .dropdown-item {
+    position: relative;
+}
+
+.dropdown-item:hover .dropdown-submenu {
+    display: block;
+}
+  
+  /* Grid Layout */
+  .submenu-content {
+    width: 100%;
+  }
+  
+  .grid-container {
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+    /* margin-top: 30px; */
+    padding: 10px;
+  }
+  .grid-container2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 10px; */
+    margin-top: 0px;
+    /* padding: 10px; */
+  }
+ 
+  .category-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-submenu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+  }
+  
+  .dropdown-item:hover .dropdown-submenu {
+    display: block;
+  }
+  .category-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  li:hover{
+    background-color: #f0f0f0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+
+
+
+
+
+
+
+
+  
+.dropdown-options {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position to the right */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    min-width: 150px;
+  }
+  .topp{
+    top: 0; /* Align with the parent item */
+  left: 100%; 
+  }
+  
+  .dropdown-options p {
+    /* margin: 5px 0; */
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-options p:hover {
+    background-color: #ddd;
+  }
+  .menu-item:hover > .dropdown-options,
+  .menu-items:hover > .dropdown-options {
+    display: block;
+  }
+  .dropdown-submenu {
+    position: absolute;
+  }
+  
+  .grid-container2 {
+    display: flex;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu-items {
+    position: relative;
+  }
+  
+  .menu-item {
+    /* margin-top: 0%; */
+    position: relative;
+    cursor: pointer;
+  }  
+  .menu-items > .dropdown-options.topp {
+    top: 0; /* Align with the parent item */
+    left: 100%; /* Position to the right */
+  }
+
+  .arrows {
+    display: flex;
+    justify-content: space-between; /* Push items to the edges */
+    align-items: center; /* Vertically center items */
+    margin-left: 20px; /* Adjust as needed */
+}
+
+
+
+
+
+
+
+
+/* Cart Icon Container */
+.cart-icon {
+  position: relative; /* Ensure the dropdown is positioned relative to this container */
+}
+
+/* Cart Dropdown Styling */
+.cart-dropdown {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the cart icon */
+  right: 0; /* Align the dropdown with the right edge of the cart icon */
+  z-index: 1000; /* Ensure it appears above other elements */
+  margin-top: 8px; /* Add a small gap between the cart icon and the dropdown */
+  background-color: white; /* Match the background color of the dropdown */
+  border: 1px solid #e0e0e0; /* Add a border for better visibility */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Ensure the CartShow component does not overflow */
+.CartShow-container {
+  max-height: 400px; /* Set a max height for the dropdown */
+  overflow-y: auto; /* Add scroll if the content exceeds the max height */
+  padding: 16px; /* Add padding for better spacing */
+}

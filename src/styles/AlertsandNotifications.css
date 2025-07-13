@@ -1,0 +1,110 @@
+/* Container Styles */
+.alerts-container {
+  max-width: 56rem;
+  margin-left: 0%;
+  padding: 1.5rem;
+}
+
+/* Title Styles */
+.alerts-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid Layout */
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Alert Base Styles */
+.alerts-alert {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Alert Icon */
+.alerts-icon {
+  font-size: 1.75rem;
+  margin-right: 1rem;
+}
+
+/* Alert Heading */
+.alerts-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Alert Text */
+.alerts-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Error Alert */
+.alerts-alert-error {
+  background-color: #ef4444; /* Red-500 */
+}
+
+/* Success Alert */
+.alerts-alert-success {
+  background-color: #22c55e; /* Green-500 */
+}
+
+/* Info Alert */
+.alerts-alert-info {
+  background-color: #3b82f6; /* Blue-500 */
+}
+
+/* Warning Alert */
+.alerts-alert-warning {
+  background-color: #f97316; /* Orange-500 */
+}
+
+/* Code Container Styles */
+.alerts-code-container {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+/* Copy Button Styles */
+.alerts-copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #e5e7eb; /* Gray-200 */
+  color: #1f2937; /* Gray-800 */
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.alerts-copy-button:hover {
+  background-color: #3b82f6; /* Blue-500 */
+  color: white;
+}
+
+/* Code Content Styles */
+.alerts-code-content {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  margin: 0;
+}

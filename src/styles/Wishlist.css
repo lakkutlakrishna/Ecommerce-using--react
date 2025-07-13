@@ -1,0 +1,124 @@
+/* General Styles */
+.wishlist {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-left: 22%;
+  }
+  
+  .wishlist h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .wishlist h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .wishlist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Wishlist Item */
+  .wishlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .wishlist-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wishlist-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .wishlist-item p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .wishlist-item p:last-child {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .wishlist-item button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .wishlist-item button:first-of-type {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .wishlist-item button:last-of-type {
+    background-color: #007bff;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .wishlist-item button:hover {
+    transform: scale(1.05);
+  }
+  
+  .wishlist-item button:first-of-type:hover {
+    background-color: #c82333;
+  }
+  
+  .wishlist-item button:last-of-type:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Empty Wishlist Message */
+  .wishlist p {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .wishlist {
+      padding: 15px;
+    }
+  
+    .wishlist-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .wishlist-item button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }

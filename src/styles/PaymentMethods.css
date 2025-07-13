@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Container Styling */
+  .payment-methods {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styling */
+  .payment-methods h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Methods List Container */
+  .methods-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Method Card Styling */
+  .method-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+  }
+  
+  .method-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .method-card p strong {
+    color: #333;
+  }
+  
+  /* Delete Button Styling */
+  .method-card button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .method-card button:hover {
+    background-color: #a71d2a;
+    transform: scale(1.02);
+  }
+  
+  .method-card button:focus {
+    outline: 2px solid #8b0000;
+    outline-offset: 2px;
+  }
+  
+  /* No Payment Methods Message */
+  .methods-list p {
+    text-align: center;
+    color: #888;
+    font-size: 1rem;
+  }
+  
+  /* Add Payment Method Button */
+  .payment-methods .add-method {
+    display: block;
+    margin: 1.5rem auto 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .payment-methods .add-method:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .payment-methods .add-method:focus {
+    outline: 2px solid #004085;
+    outline-offset: 2px;
+  }
